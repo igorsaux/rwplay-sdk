@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "game": "rumble",
+    "developer": "Igor Spichkin",
+    "files": {
+        "/boot.elf": "zig-out/bin/rumble.elf"
+    }
+}

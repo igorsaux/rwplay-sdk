@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "Debug empty",
+            "type": "lldb",
+            "request": "attach",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/zig-out/bin/empty.elf"
+            ],
+            "processCreateCommands": [
+                "gdb-remote localhost:1234"
+            ]
+        },
+        {
+            "name": "Debug fbtest",
+            "type": "lldb",
+            "request": "attach",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/zig-out/bin/fbtest.elf"
+            ],
+            "processCreateCommands": [
+                "gdb-remote localhost:1234"
+            ]
+        },
+        {
+            "name": "Debug intest",
+            "type": "lldb",
+            "request": "attach",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/zig-out/bin/intest.elf"
+            ],
+            "processCreateCommands": [
+                "gdb-remote localhost:1234"
+            ]
+        },
+        {
+            "name": "Debug rumble",
+            "type": "lldb",
+            "request": "attach",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/zig-out/bin/rumble.elf"
+            ],
+            "processCreateCommands": [
+                "gdb-remote localhost:1234"
+            ]
+        },
+        {
+            "name": "Debug snake",
+            "type": "lldb",
+            "request": "attach",
+            "targetCreateCommands": [
+                "target create ${workspaceFolder}/zig-out/bin/snake.elf"
+            ],
+            "processCreateCommands": [
+                "gdb-remote localhost:1234"
+            ]
+        }
+    ]
+}

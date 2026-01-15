@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "game": "empty",
+    "developer": "Igor Spichkin",
+    "files": {
+        "/boot.elf": "zig-out/bin/empty.elf"
+    }
+}

@@ -1,0 +1,18 @@
+.{
+    .name = .rwplay_sdk,
+    .version = "1.0.0",
+    .fingerprint = 0x4cf0a501d5bd616c,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .ondatra = .{
+            .url = "git+https://github.com/igorsaux/ondatra#c81630ac692baf423ee1776169a2571d9990fb3a",
+            .hash = "ondatra-0.14.0-dNNKzXyaCQBnvbM8CXS7q-IDmSDKADZIniHgI1k54NbN",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+    },
+}

@@ -1,0 +1,9 @@
+Sounds:
+
+game_over.wav - Death Falling 08_8 BIT ERA by sample_able -- https://freesound.org/s/744574/ -- License: Attribution 4.0
+eat.wav - Acquire by Kenneth_Cooney -- https://freesound.org/s/781199/ -- License: Creative Commons 0
+bgm.wav - Video game music (LOOP) (kinda retro vibes) by Ric34 -- https://freesound.org/s/776503/ -- License: Creative Commons 0
+
+Images:
+
+https://cosme.itch.io/snake

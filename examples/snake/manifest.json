@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "game": "snake",
+    "developer": "Igor Spichkin",
+    "files": {
+        "/boot.elf": "zig-out/bin/snake.elf",
+        "/bgm.wav": "examples/snake/assets/bgm.wav",
+        "/eat.wav": "examples/snake/assets/eat.wav",
+        "/game_over.wav": "examples/snake/assets/game_over.wav",
+        "/food.tga": "examples/snake/assets/food.tga",
+        "/grass_1.tga": "examples/snake/assets/grass_1.tga",
+        "/grass_2.tga": "examples/snake/assets/grass_2.tga",
+        "/grass_3.tga": "examples/snake/assets/grass_3.tga",
+        "/snake_body.tga": "examples/snake/assets/snake_body.tga",
+        "/snake_north.tga": "examples/snake/assets/snake_north.tga",
+        "/snake_west.tga": "examples/snake/assets/snake_west.tga",
+        "/snake_east.tga": "examples/snake/assets/snake_east.tga",
+        "/snake_south.tga": "examples/snake/assets/snake_south.tga"
+    }
+}
