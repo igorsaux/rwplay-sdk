@@ -48,7 +48,7 @@ pub inline fn EntryPoint(comptime config: struct {
                     }
 
                     _ = @call(.never_inline, root.main, .{}) catch |err| {
-                        sdk.uart.print("{s}", .{@errorName(err)});
+                        sdk.uart.print("The main function failed with an error: {s}\n", .{@errorName(err)});
                     };
                 },
             }
