@@ -1,6 +1,6 @@
 .{
     .name = .rwplay_sdk,
-    .version = "1.0.1",
+    .version = "1.0.2",
     .fingerprint = 0x4cf0a501d5bd616c,
     .minimum_zig_version = "0.15.2",
     .dependencies = .{
@@ -13,6 +13,7 @@
         "build.zig",
         "build.zig.zon",
         "src",
+        "tools",
         "LICENSE",
     },
 }
