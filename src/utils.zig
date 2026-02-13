@@ -36,9 +36,39 @@ pub inline fn EntryPoint(comptime config: struct {
                 sdk.arch.Mstatus.enableFpu();
             }
 
-            @call(.never_inline, root.main, .{});
+            const ReturnType = @typeInfo(@TypeOf(root.main)).@"fn".return_type.?;
 
-            while (true) {}
+            switch (ReturnType) {
+                void, noreturn => {
+                    @call(.never_inline, root.main, .{});
+                },
+                else => {
+                    if (@typeInfo(ReturnType) != .error_union) {
+                        @compileError("expected return type of main to be 'void', '!void' or 'noreturn'");
+                    }
+
+                    _ = @call(.never_inline, root.main, .{}) catch |err| {
+                        sdk.uart.print("{s}", .{@errorName(err)});
+                    };
+                },
+            }
+
+            sdk.gpu.setVblankInterrupts(true);
+            sdk.arch.Mie.setMeie();
+
+            while (true) {
+                while (true) {
+                    const device = sdk.plic.claim;
+
+                    if (device == .none) {
+                        break;
+                    }
+
+                    sdk.plic.claim = device;
+                }
+
+                sdk.arch.wfi();
+            }
         }
     };
 }
