@@ -59,7 +59,6 @@ const riscv32Query: std.Target.Query = .{
         std.Target.riscv.Feature.i,
         std.Target.riscv.Feature.m,
         std.Target.riscv.Feature.f,
-        std.Target.riscv.Feature.d,
         std.Target.riscv.Feature.zicsr,
         std.Target.riscv.Feature.zicntr,
         std.Target.riscv.Feature.zifencei,
